@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class BlogEditor extends StatelessWidget {
@@ -10,9 +9,12 @@ class BlogEditor extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       controller: controller,
+      keyboardType: TextInputType.multiline,  //enables multiline behavior on the keyboard.
+      textInputAction: TextInputAction.newline, //allows "Enter" to insert a new line.
       decoration: InputDecoration(
         hintText: hintText,
       ),
+      maxLines: null, //allows the input to grow as needed vertically.
     );
   }
 }
