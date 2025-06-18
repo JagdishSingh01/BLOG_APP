@@ -6,17 +6,22 @@ class AppTheme {
     borderRadius: BorderRadius.circular(10),
     borderSide: BorderSide(color: color, width: 3),
   );
+
   static final darkThemeMode = ThemeData.dark().copyWith(
     scaffoldBackgroundColor: AppPallete.backgroundColor,
     appBarTheme: AppBarTheme(backgroundColor: AppPallete.backgroundColor),
+    
     chipTheme: ChipThemeData(
       backgroundColor: AppPallete.backgroundColor,
       side: BorderSide.none
     ),
+
     inputDecorationTheme: InputDecorationTheme(
       contentPadding: EdgeInsets.all(27),
+      border: _border(),
       enabledBorder: _border(),
       focusedBorder:_border(AppPallete.gradient2),
+      errorBorder: _border(AppPallete.errorColor),
     ),
   );
 }
