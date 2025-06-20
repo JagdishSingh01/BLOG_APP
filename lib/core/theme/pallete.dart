@@ -10,4 +10,9 @@ class AppPallete {
   static const Color greyColor = Colors.grey;
   static const Color errorColor = Colors.redAccent;
   static const Color transparentColor = Colors.transparent;
+  static const Color tagRed = Color(0xFFEA5951);
+  static const Color tagGreen = Color(0xFF2AAA5C);
+  static const Color tagYellow = Colors.amber;
+  static const Color tagPurple = Color(0xFFC5B8FE);
+
 }
